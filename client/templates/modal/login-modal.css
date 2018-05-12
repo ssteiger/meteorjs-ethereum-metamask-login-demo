@@ -1,0 +1,18 @@
+#loginModal .modal-body {
+  padding-top:70px;
+  padding-bottom:70px;
+}
+
+#loginModal .modal-content {
+  border-radius:0; /* remove round corners */
+}
+
+#LoginButtonMM {
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color:#F79220;
+  border:none;
+}

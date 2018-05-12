@@ -1,0 +1,21 @@
+<template name="stats">
+  <div id="stats">
+    {{#if foundWeb3}}
+    <table class="table table-bordered">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web3 found:</td>
+          <td>{{foundWeb3}}</td>
+        </tr>
+        <tr>
+          <td>Network:</td>
+          <td>{{getCurrentNetwork}}</td>
+        </tr>
+      </tbody>
+    </table>
+    {{/if}}
+  </div>
+</template>

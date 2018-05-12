@@ -1,0 +1,25 @@
+<template name="main">
+  <div id="main">
+    <div class="col-xs-12 col-md-6">
+      {{#if currentUser}}
+      <h2 style="color:green">You are logged in!</h2>
+      <button class="btn btn-default" id="logOut">Logout</button>
+      {{else}}
+      <h2 style="color:red">Currently not logged in!</h2>
+      {{/if}}
+
+      {{#if foundWeb3}}
+      {{else}}
+      <h3>
+        Could not find Web3 ->
+        Please install <a href="https://metamask.io/" target="_blank">MetaMask</a>
+      </h3>
+      {{/if}}
+
+
+    </div>
+    <div class="col-xs-12 col-md-6">
+      {{> stats}}
+    </div>
+  </div>
+</template>
