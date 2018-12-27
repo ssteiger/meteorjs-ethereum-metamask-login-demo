@@ -56,7 +56,7 @@ Meteor.methods({
         let stampedLoginToken = Accounts._generateStampedLoginToken();
         Accounts._insertLoginToken(user._id, stampedLoginToken);
 
-        //console.log('Success! Teturning login token!');
+        //console.log('Success! Returning login token!');
         return stampedLoginToken;
       } else {
         throw new Meteor.Error('Login attempt not valid');

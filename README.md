@@ -1,14 +1,14 @@
 # Login Demo with [MeteorJS](https://www.meteor.com/), [Ethereum](https://ethereum.org/) & [MetaMask](https://metamask.io/)
 
-### Installation
+## Installation
 ```sh
-$ git clone
+# select folder
 $ cd meteorjs-ethereum-metamask-login-demo
-$ meteor npm install --save web3
+# start app
 $ meteor
 ```
 
-### Screenshots
+## Screenshots
 
 ![Screenshot01](./tests/screenshots/01.png?raw=true "Screenshot01")
 ![Screenshot02](./tests/screenshots/02.png?raw=true "Screenshot02")
