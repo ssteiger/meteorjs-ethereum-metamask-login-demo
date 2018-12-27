@@ -25,7 +25,7 @@ Template.loginModal.events({
         }
       });
 
-    }); // Meteor.call()
+    });
 
   }
 });

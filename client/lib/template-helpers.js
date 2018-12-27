@@ -43,7 +43,6 @@ Template.registerHelper('getBalance', function(address) {
     web3.eth.getBalance(address, function(error, wei) {
       if (!error) {
         let balance = web3.fromWei(wei.toString(), 'ether');
-        //console.log(balance);
         return balance;
       } else {
         console.log(error);
