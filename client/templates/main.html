@@ -1,4 +1,21 @@
 <template name="main">
+  <div id="overlay">
+    <div class="content">
+      <div class="no-web3-browser">
+        <h1>You need to use a web3 compatible browser in order to use this app.</h1>
+        <h3>Have a look at one of the following options:</h3>
+        <h4>
+          <a href="https://metamask.io/" target="_blank">-> MetaMask Extension</a>
+        </h4>
+        <h4>
+          <a href="https://brave.com/" target="_blank">-> Brave Browser</a>
+        </h4>
+      </div>
+      <div class="web3-not-unlocked">
+        <h1>Please unlock this app to view your accounts.</h1>
+      </div>
+    </div>
+  </div>
   <div id="main">
     <div class="col-xs-12 col-md-6">
       {{#if currentUser}}
