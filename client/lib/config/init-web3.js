@@ -1,8 +1,6 @@
 // https://github.com/ethereum/web3.js/
 // https://medium.com/metamask/https-medium-com-metamask-breaking-change-injecting-web3-7722797916a8
 
-//var Web3 = require('web3');
-
 window.addEventListener('load', async () => {
   // Modern dapp browsers...
   if (window.ethereum) {

@@ -1,6 +1,9 @@
 import { Meteor } from 'meteor/meteor'
 import { Random } from 'meteor/random'
 
+var Web3 = require('web3');
+var web3 = new Web3('');
+
 Meteor.methods({
   'user.generateNewLoginAttempt': function(user_address) {
     let exists = Meteor.users.findOne({username: user_address});
@@ -31,11 +34,6 @@ Meteor.methods({
       let v = '0x' + signed_nonce.slice(130,134);
       let r = signed_nonce.slice(0,66);
       let s = '0x' + signed_nonce.slice(66,130);
-      /*
-      console.log('v: ' + v);
-      console.log('r: ' + r);
-      console.log('s: ' + s);
-      */
 
       // recover public key from hashed nonce
       let public_key = web3.eth.accounts.recover({
@@ -55,8 +53,7 @@ Meteor.methods({
         // success, now login user
         let stampedLoginToken = Accounts._generateStampedLoginToken();
         Accounts._insertLoginToken(user._id, stampedLoginToken);
-
-        //console.log('Success! Returning login token!');
+        console.log('Success! Returning login token!');
         return stampedLoginToken;
       } else {
         throw new Meteor.Error('Login attempt not valid');
