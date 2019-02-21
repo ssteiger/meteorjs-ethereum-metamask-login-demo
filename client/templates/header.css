@@ -1,0 +1,5 @@
+.navbar {
+  /* overwrite bootstrap */
+  border:none;
+  border-radius:0;
+}
