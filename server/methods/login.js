@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor'
 import { Random } from 'meteor/random'
 
 var Web3 = require('web3');
-var web3 = new Web3('');
+var web3 = new Web3(Web3.givenProvider || 'ws://localhost:8546', null, {});
 
 Meteor.methods({
   'user.generateNewLoginAttempt': function(user_address) {
